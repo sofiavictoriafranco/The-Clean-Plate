@@ -1,9 +1,9 @@
 const mongoose = require('mongoose')
 require('dotenv').config()
-const {DB_USER, DB_PASSWORD, DB_HOST, DB_NAME} = process.env
+const {DB_USER, DB_PASSWORD, DB_HOST, DB_NAME, DB_DEPLOY} = process.env
 
 // 127.0.0.1
-mongoose.connect(`mongodb+srv://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}?retryWrites=true&w=majority`, {
+mongoose.connect(DB_DEPLOY, {
     
     useUnifiedTopology: true,
     useNewUrlParser: true,
