@@ -38,7 +38,7 @@ export const store = configureStore({
 store.dispatch(getTotal());
 
 //axios.defaults.baseURL = 'http://localhost:3001'
-axios.defaults.baseURL = 'the-clean-plate-production.up.railway.app'
+axios.defaults.baseURL = 'https://the-clean-plate-production.up.railway.app/'
 
 
 
