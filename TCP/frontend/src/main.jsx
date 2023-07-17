@@ -46,8 +46,8 @@ axios.defaults.baseURL = 'https://the-clean-plate-production.up.railway.app/'
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Auth0Provider
-      domain="dev-kpcb1xpi7aaypegd.us.auth0.com"
-      clientId="PTbYBGwYv0xFnKTDvp2VkKS0P6ZB6JVB"
+      domain="dev-1qyo31o0hmsu8fgf.us.auth0.com"
+      clientId="Z38oFptx9pquDETBFFONheVOuOBORe6F"
       redirectUri={window.location.origin}
       scope="openid profile email"
     >
