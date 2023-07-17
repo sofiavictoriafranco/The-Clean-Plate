@@ -83,12 +83,12 @@ router.post("/create-checkout-session", express.json(), async (req, res) => {
       customer: customer.id,
       line_items,
       mode: "payment",
-      success_url: "http://localhost:5173/#/CheckoutSuccess",
-      cancel_url: "http://localhost:5173/#/cart",
+      // success_url: "http://localhost:5173/#/CheckoutSuccess",
+      // cancel_url: "http://localhost:5173/#/cart",
 
       //!DEPLOY
-      //! success_url: "https://frontend-pf-seven.vercel.app/#/CheckoutSuccess",
-      //! cancel_url: "http://frontend-pf-seven.vercel.app/#/cart",
+       success_url: "https://the-clean-plate.vercel.app/#/CheckoutSuccess",
+      cancel_url: "http://the-clean-plate.vercel.app/#/cart",
     });
     // console.log("session console", session);
     res.send({ url: session.url });
